@@ -1,0 +1,86 @@
+/* Profile.module.css */
+.profile {
+    margin-left: 100px;
+    border: 5px solid #212121;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 20px;
+    width: 300px;
+    background-color: #FAFAFA;
+  }
+ /* 
+  .userInfo {
+   
+  }
+  */
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #242424;
+  
+  }
+  
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  .tag {
+    margin-top: 0;
+    color: #838383;
+    font-size: 25px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .location {
+    margin-top: 0;
+    color: #838383;
+    font-size: 25px;
+    
+  }
+  
+  .statsList { 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-top: 10px;
+    align-items: center; 
+  }
+  
+  .statItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    background-color: #D3D3D3;
+    border: 3px solid #A9A9A9;
+    border-left: none;
+    border-bottom: none;
+    color: #000000;
+  }
+
+  .statItem:first-child{
+    border-bottom-left-radius: 15px;
+  }
+
+  .statItem:last-child {
+    border-right: none;
+    border-bottom-right-radius: 15px;
+}
+
+  .statLabel {
+    font-size: 20px;
+  }
+  
+  .statValue {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+
