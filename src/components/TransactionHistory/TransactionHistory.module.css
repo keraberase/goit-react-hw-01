@@ -33,8 +33,8 @@
     background-color: #D3D3D3;
   }
   
-  /* Стили для заголовка "Type" с заглавными буквами */
+  /* Стили для заголовка "Type" с заглавными первыми буквами */
   .thType {
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   

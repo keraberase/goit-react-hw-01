@@ -1,14 +1,11 @@
-// TransactionHistory.jsx
-
-import React from 'react';
-import css from './TransactionHistory.module.css'; // Импортируем файл стилей
+import css from './TransactionHistory.module.css'; 
 
 const TransactionHistory = ({ items }) => {
   return (
     <table className={css.transactionHistory}>
       <thead>
         <tr>
-          <th className={`${css.tableHead} ${css.thType}`}>Type</th>
+          <th className={css.tableHead}>Type</th>
           <th className={css.tableHead}>Amount</th>
           <th className={css.tableHead}>Currency</th>
         </tr>
@@ -16,7 +13,7 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(item => (
           <tr key={item.id}>
-            <td>{item.type}</td>
+            <td>{item.type.charAt(0).toUpperCase() + item.type.slice(1)}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
           </tr>
