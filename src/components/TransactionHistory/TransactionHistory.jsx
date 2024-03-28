@@ -1,11 +1,15 @@
-import css from './TransactionHistory.module.css'; // Імпортуємо файли стилів
+import css from './TransactionHistory.module.css'; // Импортируем файл стилей
+
+const capitalizeFirstLetter = (str) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className={css.transactionHistory}> {/* Додавання класу з файлу стилів */}
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
-          <th className={css.tableHead}>Type</th> {/* Додавання класу для заголовку */}
+          <th className={css.tableHead}>Type</th>
           <th className={css.tableHead}>Amount</th>
           <th className={css.tableHead}>Currency</th>
         </tr>
@@ -13,7 +17,7 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(item => (
           <tr key={item.id}>
-            <td>{item.type}</td>
+            <td>{capitalizeFirstLetter(item.type)}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
           </tr>

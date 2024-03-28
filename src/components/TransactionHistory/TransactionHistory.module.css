@@ -28,3 +28,6 @@ tr:nth-child(even) {
   background-color: #D3D3D3;
 }
 
+.tableHead, td {
+    text-align: center; /* Центрирование текста в ячейках */
+  }
