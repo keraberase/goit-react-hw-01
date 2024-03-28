@@ -1,4 +1,4 @@
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Profile from "./components/Profile/Profile.jsx";
 import userData from "./userData.json";
 import FriendList from "./components/FriendList/FriendList.jsx";

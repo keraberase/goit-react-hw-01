@@ -1,3 +1,4 @@
+/* Profile */
 import css from './Profile.module.css'; // css modules
 
 const Profile = ({ name, tag, location, image, stats }) => {

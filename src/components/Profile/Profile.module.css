@@ -1,5 +1,5 @@
 /* Profile.module.css */
-.profile {
+ .profile {
     margin-left: 100px;
     border: 5px solid #212121;
     border-radius: 15px;
@@ -82,5 +82,8 @@
     font-size: 20px;
     font-weight: 700;
   }
+  
+
+
   
 
