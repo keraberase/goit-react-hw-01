@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Profile from "./components/Profile/Profile.jsx";
 import userData from "./userData.json";
 import FriendList from "./components/FriendList/FriendList.jsx";
@@ -17,6 +18,7 @@ const App = () => {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
+      <SpeedInsights />
     </>
   );
 };
